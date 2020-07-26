@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: wheat;
+}
+
+
+#titulo{
+	font-family: "Product Sans",Arial,Helvetica,sans-serif;
+	font-size: 100px;
+	margin: 20px auto;
+}
+
+.titulo-alimenta{
+    text-align: center;
+    color: wheat;
+    text-transform: uppercase;
+    background-color: #e33d3d;
+}
+
+.titulo-alimenta1{
+    color: #000;
+    font-size: 14pt;
+    text-indent: 30px;
+}
+
+#game{
+	position: relative;
+	width: 1325px;
+	height: 495px;
+	margin: 60px auto;
+	background-color: wheat;
+}
+
+.card{
+	width: 160px;
+	height: 240px;
+	perspective: 600px;
+	position: absolute;
+	border-radius: 10px;
+	border: 1px solid rgba(245, 222, 179);
+}
+
+.face{
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all 1s;
+	backface-visibility: hidden;
+}
+
+.front{
+	transform: rotateY(-180deg);
+}
+
+.flipped.front{
+	transform: rotateY(0deg);
+}
+
+.back{
+	background: url(../img/teste.jpg);
+}
+
+.flipped.back{
+	transform: rotateY(180deg);
+}
+
+.card:hover, .face.flipped{
+	box-shadow: 0 0 10px #000;
+}
+
+.face.flipped.match{
+	box-shadow: 0 0 10px #000;
+}
+
+#match{
+	position: relative;
+	margin: 0 auto;
+	top: 250px;
+	z-index: -1;
+	opacity: 1;
+	transition-property: top, opacity;
+	transition-duration: 1.5s;
+}
+
+#gameOver{
+	position: absolute;
+	top: 0;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -2;
+	text-align: center;
+}
+
+#imgGameOver{
+	width: 100%;
+    height: 100%;
+}

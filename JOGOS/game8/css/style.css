@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.titulo-alimenta{
+    text-align: center;
+    color: wheat;
+    text-transform: uppercase;
+    background-color: #e33d3d;
+}
+
+.titulo-alimenta1{
+    color: #000;
+    font-size: 14pt;
+    text-indent: 30px;
+}
+
+.panel{
+  width: 397px;
+    height: 396px;
+    border-radius: 10px;
+}
+
+.collapse{
+  padding-left: 24%;
+}
+
+.form-control{
+  background: none;
+  color: #fff;
+}
+
+.cont-VT3 {
+    background: rgba(0,0,0,.4);
+}
+
+.img-flv{
+  width: 97%;
+    height: 83%;
+    padding-right: 21%;
+    margin-top: 8%;
+    padding-top: 1%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.modal1{
+  position: absolute;
+  transition: all .5s;
+}
+
+#container{
+  position: relative;
+  margin: 47px 141px;
+  border: outset;
+  box-shadow: 
+}
+
+#startScreen{
+  background: url('../img/start.gif');
+  opacity: 1;
+  z-index: 1;
+}
+
+#overScreen{
+  background: url('../img/over.png');
+  opacity: 0;
+  z-index: -1;
+}
+
+.tile{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  transition: left .5s, top .5s;
+}
+
+.tile:hover{
+  border: inset;
+  border-radius: 10px;
+}
